@@ -1,0 +1,125 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #be3144;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    padding: 20px;
+}
+
+#navbar {
+    width: fit-content;
+    margin-left: auto;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#navbar a:nth-of-type(2n) {
+    margin: 0 20px;
+}
+
+#welcome-section {
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    height: calc(100vh - 42px - 1.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-section h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+
+h1 span {
+    font-size: 2rem;
+    color: red;
+    font-weight: 400;
+}
+
+#projects {
+    background-color: #45567d;
+    padding: 50px 30px;
+}
+
+.project-list {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#projects h2 {
+    display: block;
+    width: fit-content;
+    padding-bottom: 10px;
+    border-bottom: 3px solid white;
+    margin: 0 auto 40px auto;
+    font-size: 3rem;
+    color: white;
+}
+
+.project {
+    display: block;
+    border-radius: 2px;
+    background-color: #303841;
+    color: white;
+
+}
+
+.project img {
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+
+.project p {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#profile-link {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #303841;
+    color: white;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+@media (max-width: 560px ) {
+    #projects {
+        padding: 20px 0;
+    }
+
+    .project-title {
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    .project img {
+        max-width: unset;
+        width: 100vw;
+        height: auto;
+    }
+}
+
